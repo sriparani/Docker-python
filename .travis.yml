@@ -5,7 +5,7 @@ services:
    
 
 before_install:
- - docker build -t sparanid/docker-python -f Dockerfile.dev .
+ - docker build -t sparanid/docker-python -f Dockerfile .
 
 script:
   - docker run sparanid/docker-python python mainapp.test.py
